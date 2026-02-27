@@ -112,6 +112,7 @@
     "strategy": "Strategy",
     "ranking": "Ranking",
     "market": "Market",
+    "portfolio": "Portfolio Optimizer",
     "setting": "Setting"
   },
   "updates": {
@@ -388,6 +389,138 @@
       "model": "Model",
       "details": "Details",
       "loading": "Loading..."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio Optimization Agent",
+    "subtitle": "Upload your Fidelity CSV exports to analyze your portfolio performance.",
+    "uploadNew": "Upload New Files",
+    "dataFrom": "Data from: {{positions}} · {{trades}}",
+    "upload": {
+      "title": "Upload Fidelity CSV Files",
+      "description": "Upload your Fidelity account exports to generate a comprehensive portfolio dashboard.",
+      "required": "Required",
+      "optional": "Optional",
+      "dragDrop": "Drag & drop or click to upload",
+      "csvOnly": "CSV files only",
+      "remove": "Remove file",
+      "readError": "Failed to read file. Please try again.",
+      "positionsLabel": "Portfolio Positions",
+      "positionsDesc": "Download from Fidelity: Accounts → Portfolio → Positions → Download CSV",
+      "tradesLabel": "Historical Activity",
+      "tradesDesc": "Download from Fidelity: Accounts → Activity & Orders → History → Download CSV",
+      "closedLabel": "Closed Positions (P&L)",
+      "closedDesc": "Download from Fidelity: Accounts → Tax Forms & Information → Realized Gain/Loss → Download CSV",
+      "howToTitle": "How to download from Fidelity:",
+      "howTo1": "Log in to Fidelity.com and go to Accounts & Trade",
+      "howTo2": "Navigate to Portfolio for positions, or Activity & Orders for trade history",
+      "howTo3": "Click the download icon and select CSV format"
+    },
+    "summary": {
+      "totalValue": "Total Account Value",
+      "weekGainLoss": "Past Week G/L",
+      "monthGainLoss": "Last Month G/L",
+      "totalUnrealizedGainLoss": "Total Unrealized G/L",
+      "totalCostBasis": "Total Cost Basis",
+      "positions": "Positions",
+      "realizedGainLoss": "Realized G/L"
+    },
+    "allocation": {
+      "title": "Asset Allocation",
+      "other": "Other"
+    },
+    "gains": {
+      "title": "Unrealized Gain / Loss by Position",
+      "subtitle": "Top 10 gainers & bottom 10 losers shown per category",
+      "tabStocks": "Stocks & ETFs",
+      "tabOptions": "Options",
+      "emptyStocks": "No stock or ETF positions found",
+      "emptyOptions": "No options positions found"
+    },
+    "performance": {
+      "title": "Portfolio Activity Over Time",
+      "description": "Cumulative trade volume derived from historical activity (buy + sell amounts)"
+    },
+    "positions": {
+      "symbol": "Symbol",
+      "description": "Description",
+      "qty": "Qty",
+      "lastPrice": "Last Price",
+      "currentValue": "Current Value",
+      "costBasis": "Cost Basis",
+      "todayGL": "Today G/L",
+      "totalGL": "Total G/L",
+      "pctAccount": "% Account",
+      "empty": "No positions to display"
+    },
+    "trades": {
+      "date": "Date",
+      "action": "Action",
+      "symbol": "Symbol",
+      "description": "Description",
+      "qty": "Qty",
+      "price": "Price",
+      "amount": "Amount",
+      "fees": "Fees",
+      "settlement": "Settlement",
+      "filterPlaceholder": "Filter by symbol or action...",
+      "records": "records",
+      "prev": "Previous",
+      "next": "Next",
+      "pageOf": "Page {{current}} of {{total}}",
+      "empty": "No trade records to display"
+    },
+    "closed": {
+      "symbol": "Symbol",
+      "description": "Description",
+      "costBasis": "Cost Basis",
+      "proceeds": "Proceeds",
+      "shortTermGL": "Short-Term G/L",
+      "longTermGL": "Long-Term G/L",
+      "totalGL": "Total G/L",
+      "total": "Total",
+      "empty": "No closed positions to display"
+    },
+    "tabs": {
+      "positions": "Open Positions",
+      "trades": "Trade History",
+      "closed": "Closed Positions"
+    },
+    "behavior": {
+      "sectionTitle": "Trading Behavior Intelligence",
+      "sectionSubtitle": "Derived from your historical activity — these patterns power the AI optimization agent's recommendations.",
+      "totalBuys": "Buy Transactions",
+      "totalSells": "Sell Transactions",
+      "capitalDeployed": "Capital Deployed",
+      "saleProceeds": "Sale Proceeds",
+      "tradesPerMonth": "Trades / Month",
+      "avgHoldingPeriod": "Avg Holding Period",
+      "notEnoughData": "N/A",
+      "buys": "Buys",
+      "sells": "Sells",
+      "dividends": "Dividends",
+      "monthlyTitle": "Monthly Trading Activity",
+      "monthlyDesc": "Stacked buy / sell / dividend count per month (last 24 months)",
+      "mostTraded": "Most Traded Symbols",
+      "trades": "trades",
+      "noData": "No data available",
+      "dividendIncome": "Dividend & Income",
+      "dividendDesc": "Total received from dividends, interest, and reinvestments",
+      "washSaleWarning": "⚠ Potential Wash Sale Risk Detected",
+      "washSaleDesc": "The following symbols were sold and repurchased within 30 days. The IRS wash sale rule may disallow those capital losses.",
+      "aiContextTitle": "AI Agent Signal — Why This Data Matters",
+      "aiContextDesc": "The Historical Activity file is the behavioral intelligence layer of your portfolio. It reveals WHEN decisions were made, not just what positions exist today. The AI optimization agent uses buy/sell timing, churn rate, holding periods, wash sale risk, and dividend patterns to identify behavioral biases (e.g. loss aversion, FOMO buying, over-trading) and generate personalized rebalancing recommendations."
+    },
+    "pnl": {
+      "sectionTitle": "Realized P&L Analysis",
+      "totalRealized": "Total Realized G/L",
+      "shortTermTotal": "Short-Term G/L",
+      "longTermTotal": "Long-Term G/L",
+      "shortTerm": "Short-Term",
+      "longTerm": "Long-Term",
+      "stLtTitle": "Short-Term vs Long-Term Capital Gains",
+      "waterfallTitle": "Realized P&L by Position (Top 15)",
+      "waterfallDesc": "Sorted by absolute gain/loss. Green = gain, Red = loss."
     }
   },
   "home": {

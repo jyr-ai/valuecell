@@ -166,6 +166,12 @@ const AppSidebar: FC = () => {
           label: t("nav.market"),
           to: "/market",
         },
+        {
+          id: "portfolio",
+          icon: Market,
+          label: t("nav.portfolio"),
+          to: "/portfolio",
+        },
       ],
       config: [
         {
